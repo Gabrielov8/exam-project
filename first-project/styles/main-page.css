@@ -1,0 +1,11 @@
+.main-content__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.main-content__list img {
+    height: 300px;
+    border-radius: 10px;
+
+}

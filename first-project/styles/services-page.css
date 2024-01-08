@@ -1,0 +1,20 @@
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 20px;
+    min-height: 150px;
+    padding: 24px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.08),0 4px 6px rgba(0,0,0,.04);
+}
+
+.services__card:hover {
+    background: linear-gradient(180deg,#fff,rgba(0,0,0,.02) 65.62%)
+}

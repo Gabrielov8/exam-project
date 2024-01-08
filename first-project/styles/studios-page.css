@@ -1,0 +1,31 @@
+.studios__list {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "first second second second"
+        "first third third third"
+        "first third third third"
+        "fourth fourth fourth fourth" ;
+    height: 600px;
+}
+
+.studios__first {
+    grid-area: first;
+}
+.studios__second {
+    grid-area: second;
+}
+.studios__third {
+    grid-area: third;
+}
+.studios__fourth {
+    grid-area: fourth;
+}
+
+.studios__list li {
+    /*вставить корректную картинку*/
+    /*background-image: url(../image/1.avif);*/
+    /*background-repeat: no-repeat;*/
+
+    background-color: #049849;
+}
