@@ -4,6 +4,7 @@ const mainContentWrapper = document.querySelector('.main-content');
 const servicesContentWrapper = document.querySelector('.services');
 const advancesContentWrapper = document.querySelector('.advances');
 const studiosContentWrapper = document.querySelector('.studios');
+const authContentWrapper = document.querySelector('.auth');
 
 // создаем хэш мап для получения элемента по ключу
 const navigationConfig = {
@@ -11,7 +12,8 @@ const navigationConfig = {
     main: mainContentWrapper,
     services: servicesContentWrapper,
     advances: advancesContentWrapper,
-    studios: studiosContentWrapper
+    studios: studiosContentWrapper,
+    auth: authContentWrapper
 }
 
 window.addEventListener('hashchange', ()=> {
@@ -22,4 +24,9 @@ window.addEventListener('hashchange', ()=> {
     activeContent?.classList.remove('content_active')
 
     navigationConfig[hashValue]?.classList.add('content_active')
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mainHash = '#main'
+    window.location = window.location + mainHash
 })

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/about-page.css">
     <link rel="stylesheet" href="./styles/studios-page.css">
     <link rel="stylesheet" href="./styles/services-page.css">
+    <link rel="stylesheet" href="./styles/form.css">
     <title>Проектная работа 1</title>
 </head>
 <body>
@@ -21,6 +22,7 @@
             <a href="#services" class="header__link">Услуги</a>
             <a href="#advances" class="header__link">Наши заслуги</a>
             <a href="#studios" class="header__link">Наши студии</a>
+            <a href="#auth" id="auth-link" class="header__link">Авторизация</a>
         </nav>
     </header>
 
@@ -119,6 +121,23 @@
                 </li>
             </ul>
         </section>
+
+        <section class="auth content_hide">
+            <form id="form" class="form">
+                <label class="form__label">
+                    Логин
+                    <input id="login">
+                </label>
+                <label class="form__label">
+                    Пароль
+                    <input id="pass">
+                </label>
+                <button id="submit-btn" type="submit">Отправить</button>
+                <span id="validation" class="element_hide"></span>
+            </form>
+            <h2 id="user-title" class="element_hide">Скрытый контент</h2>
+            <h2 id="admin-title" class="element_hide">Скрытый контент для администратора</h2>
+        </section>
     </main>
 
     <footer class="footer">
@@ -143,6 +162,8 @@
             </section>
         </section>
     </footer>
+
     <script src="navigation.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>

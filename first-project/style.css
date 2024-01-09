@@ -63,11 +63,11 @@ body h1 {
     gap: 20px;
 }
 
-.wrapper > .content_hide {
+.wrapper > .content_hide, .content_hide {
     display: none;
 }
 
-.wrapper > .content_active {
+.wrapper > .content_active, .content_active {
     display: flex;
 }
 

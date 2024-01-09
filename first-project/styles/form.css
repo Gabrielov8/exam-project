@@ -1,0 +1,28 @@
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.element_hide {
+    display: none;
+}
+
+.element_show {
+    display: block;
+}
