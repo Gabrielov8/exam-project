@@ -27,6 +27,7 @@ window.addEventListener('hashchange', ()=> {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-    const mainHash = '#main'
-    window.location = window.location + mainHash
+    const url = new URL(window.location)
+    url.hash = '#main'
+    window.location = url
 })
